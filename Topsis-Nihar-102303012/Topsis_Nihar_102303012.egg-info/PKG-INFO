@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: Topsis-Nihar-102303012
+Version: 1.0.0
+Summary: TOPSIS implementation command line package
+Author: Nihar Sharma
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+# Topsis-Nihar-10155792
+
+This package implements TOPSIS (Technique for Order Preference by Similarity to Ideal Solution).
+
+## Install
+```bash
+pip install Topsis-Nihar-10155792
