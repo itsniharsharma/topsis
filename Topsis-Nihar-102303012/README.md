@@ -1,7 +1,11 @@
-# Topsis-Nihar-10155792
+# Topsis-Nihar-102303012
 
-This package implements TOPSIS (Technique for Order Preference by Similarity to Ideal Solution).
+This is a Python package for **TOPSIS (Technique for Order Preference by Similarity to Ideal Solution)**.
 
-## Install
+##  Installation
 ```bash
-pip install Topsis-Nihar-10155792
+pip install Topsis-Nihar-102303012
+
+
+## Usage Example
+topsis data.csv "1,1,1,2" "+,+,-,+" output-result.csv

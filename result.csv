@@ -1,0 +1,16 @@
+Project,InitialCost_Lakhs,ROI_Percent,RiskScore,Payback_Months,StrategicFit,MarketPotential,Topsis Score,Rank
+AI_Customer_Support,18,24,4,10,9,8,0.699351158570991,2
+Luxury_Skincare_Launch,35,30,6,14,10,9,0.45809164628159,11
+Inventory_Automation,22,20,3,9,8,7,0.6671528749890319,4
+Offline_Experience_Store,50,28,8,18,9,9,0.2404103387120171,15
+Influencer_Marketing_Campaign,12,18,5,6,7,8,0.6558928834007185,6
+Premium_Packaging_Upgrade,15,16,2,8,8,7,0.6984133493379824,3
+Virtual_TryOn_Tech,30,27,7,15,9,9,0.4194267449751323,12
+Subscription_Membership_Model,20,22,4,11,10,8,0.6611961693595616,5
+Export_To_UAE_Market,45,32,7,16,9,10,0.3487386368647896,13
+New_Warehouse_Setup,40,19,5,20,7,8,0.2919771508051528,14
+Mobile_App_Development,25,21,4,12,9,8,0.5943693600439656,7
+Retail_PopUp_Collaboration,28,23,6,13,8,9,0.47576676480446545,10
+CRM_Loyalty_System,16,20,3,9,9,8,0.7260802664395476,1
+Organic_Sourcing_Program,26,18,3,14,8,7,0.5565082504304213,9
+Salon_Partnership_Program,24,25,5,12,8,9,0.5833056644879091,8

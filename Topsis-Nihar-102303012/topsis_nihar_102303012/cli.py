@@ -1,20 +1,25 @@
 import sys
-from .topsis_core import topsis
+from .topsis import topsis, TopsisError
 
 
 def main():
     if len(sys.argv) != 5:
         print("Usage: topsis <InputDataFile> <Weights> <Impacts> <OutputResultFileName>")
+        print('Example: topsis data.csv "1,1,1,2" "+,+,-,+" result.csv')
         sys.exit(1)
 
     input_file = sys.argv[1]
-    weights = sys.argv[2].replace(" ", "")
-    impacts = sys.argv[3].replace(" ", "")
+    weights = sys.argv[2]
+    impacts = sys.argv[3]
     output_file = sys.argv[4]
 
     try:
         topsis(input_file, weights, impacts, output_file)
-        print("Output saved to:", output_file)
-    except Exception as e:
-        print("Error:", e)
+        print(f"Result saved in: {output_file}")
+    except TopsisError as e:
+        print(f"Error: {e}")
         sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()

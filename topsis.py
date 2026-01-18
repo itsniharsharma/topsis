@@ -1,6 +1,13 @@
+import sys
 import os
 import pandas as pd
 import numpy as np
+
+
+def show_usage():
+    print("Usage:")
+    print("python topsis.py <InputDataFile> <Weights> <Impacts> <OutputResultFileName>")
+    print('Example: python topsis.py data.csv "1,1,1,2" "+,+,-,+" result.csv')
 
 
 def topsis(input_file, weights, impacts, output_file):
@@ -66,4 +73,24 @@ def topsis(input_file, weights, impacts, output_file):
 
     df.to_csv(output_file, index=False)
 
-    return output_file
+    print("Topsis done successfully.")
+    print("Output saved to:", output_file)
+
+
+if __name__ == "__main__":
+
+    if len(sys.argv) != 5:
+        print("Incorrect number of parameters.")
+        show_usage()
+        sys.exit(1)
+
+    input_file = sys.argv[1]
+    weights = sys.argv[2].replace(" ", "")
+    impacts = sys.argv[3].replace(" ", "")
+    output_file = sys.argv[4]
+
+    try:
+        topsis(input_file, weights, impacts, output_file)
+    except Exception as e:
+        print("Error:", e)
+        sys.exit(1)
